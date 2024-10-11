@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวจังหวัดบุรีรัมย์</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* ปรับแต่งสีสันของ navbar */
+        .navbar {
+            background-color: rgb(25, 157, 245); /* เปลี่ยนสีพื้นหลัง */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFFFFF; /* เปลี่ยนสีข้อความ */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FFD700; /* เปลี่ยนสีข้อความเมื่อชี้ไปที่ลิงก์ */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">ท่องเที่ยวจังหวัดบุรีรัมย์</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tourist-attractions.html">สถานที่ท่องเที่ยว</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">กิจกรรม</a> <!-- ลิงก์ไปยังหน้ากิจกรรม -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">อาหาร</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center" style="margin-top: 40px; color: #ffffff; background-color: rgb(25, 157, 245); font-size: 2rem; text-shadow: 2px 2px 4px rgba(132, 22, 22, 0.2);">อาหารขึ้นชื่อในจังหวัดบุรีรัมย์</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSRayDlUd8KVX6bztCW-KBvblzsnFrjeKKg&s" class="card-img-top" alt="สถานที่ท่องเที่ยว 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">เป็ดย่างคูเมืองสาขาบุรีรัมย์</h5>
+                        <p class="card-text">เมนู “เป็ดย่าง” ของร้านอาหารบุรีรัมย์แห่งนี้ อร่อย ตัวขนาดกำลังดี</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodModal1">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://cms.dmpcdn.com/ugcarticle/2019/11/01/4af73a20-27cc-11eb-8dee-9f85d7573fa8_original.jpeg" class="card-img-top" alt="เมนู 2" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ข้าวมันไก่ชุมนุมไทย</h5>
+                        <p class="card-text">“มาบุรีรัมย์นอกจากจะต้องแวะกินลูกชิ้นยืนกินแล้ว ยังต้องแวะมาที่ร้านอาหารบุรีรัมย์แห่งนี้ด้วย</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodModal2">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://img.wongnai.com/p/1248x0/2024/06/21/953760ecd6114e069b3b573a3835c58d.jpg" class="card-img-top" alt="เมนู 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">กวางเจา</h5>
+                        <p class="card-text">อีกหนึ่งร้านอาหารเจ้าเก่าแก่ในเมืองบุรีรัมย์ ใครชอบกินหมูแดงและหมูกรอบไม่ผิดหวัง</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodModal3">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับอาหาร 1 -->
+    <div class="modal fade" id="foodModal1" tabindex="-1" aria-labelledby="foodModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="foodModalLabel1">เป็ดย่างคูเมืองสาขาบุรีรัมย์</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>เมนู “เป็ดย่าง” ของร้านอาหารบุรีรัมย์แห่งนี้ อร่อย ตัวขนาดกำลังดี ย่างบนเตาถ่านไฟอ่อน ๆ ค่อย ๆ ย่างจนหนังกรอบ แต่เนื้อด้านในยังชุ่มฉ่ำมาก ๆ มาถึงบุรีรัมย์ทั้งทีต้องมาลองร้านนี้ให้ได้ครับ “ส้มตำ” ก็ใช้เส้นแช่เย็นมาตำ กลายเป็นสดชื่นไปเลยจริง ๆ “คอหมูย่าง” หมักมาดี ย่างมาหอมนุ่มอร่อยมาก “ลาบเป็ด” ก็จัดจ้าน ไม่สาบเลย”</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับอาหาร 2 -->
+    <div class="modal fade" id="foodModal2" tabindex="-1" aria-labelledby="foodModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="foodModalLabel2">แกงขี้เหล็ก</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>แกงขี้เหล็กเป็นอาหารที่นิยมรับประทานในภาคอีสาน...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับอาหาร 3 -->
+    <div class="modal fade" id="foodModal3" tabindex="-1" aria-labelledby="foodModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="foodModalLabel3">กวางเจา</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>อีกหนึ่งร้านอาหารเจ้าเก่าแก่ในเมืองบุรีรัมย์ ใครชอบกินหมูแดงและหมูกรอบไม่ผิดหวัง “หมูแดง” และ “หมูกรอบ” ของร้านนี้จะหั่นเป็นชิ้นเล็ก ๆ ไม่ได้ใหญ่มากแต่มีรสชาติ เส้นบะหมี่ที่ทางร้านใช้ก็เหนียวนุ่ม แต่ที่ประทับใจมากที่สุดก็คือเกี๊ยวที่หอแผ่นแป้ง บาง ๆ ไส้ปรุงรสมากำลังดี นอกจาก “บะหมี่” แล้วทางร้านก็ยังมี “ข้าวหมูแดงและหมูกรอบ”, “ต้มเลือดหมู” และ “โจ๊ก” ให้กินกันด้วย”</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 อาหารจังหวัดบุรีรัมย์</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวจังหวัดบุรีรัมย์</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* ปรับแต่งสีสันของ navbar */
+        .navbar {
+            background-color: rgb(25, 157, 245); /* เปลี่ยนสีพื้นหลัง */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFFFFF; /* เปลี่ยนสีข้อความ */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FFD700; /* เปลี่ยนสีข้อความเมื่อชี้ไปที่ลิงก์ */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">ท่องเที่ยวจังหวัดบุรีรัมย์</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tourist-attractions.html">สถานที่ท่องเที่ยว</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">กิจกรรม</a> <!-- ลิงก์ไปยังหน้ากิจกรรม -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">อาหาร</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center" style="margin-top: 40px; color: #ffffff; background-color: rgb(25, 157, 245); font-size: 2rem; text-shadow: 2px 2px 4px rgba(132, 22, 22, 0.2);">กิจกรรมในจังหวัดบุรีรัมย์</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.superbikemag.com/wp-content/uploads/2020/01/S__28778531.jpg" class="card-img-top" alt="กิจกรรม 1" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">งานแข่งขัน MOTO GP</h5>
+                        <p class="card-text">นับถอยหลังสำหรับการแข่งขันรถจักรยานยนต์ทางเรียบชิงแชมป์โลก MotoGP 2024.</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#event1Modal">อ่านเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.thailandplus.tv/wp-content/uploads/2024/01/S__2416681.jpg" class="card-img-top" alt="กิจกรรม 2" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">บุรีรัมย์มาราธอน</h5>
+                        <p class="card-text">การแข่งขันวิ่ง บุรีรัมย์ มาราธอน 2024 เป็นรายการการแข่งขันวิ่งทั้งสิ้น 4 ระยะ ได้แก่ ระยะมาราธอน 42.195 กิโลเมตร ระยะฮาล์ฟมาราธอน 21.1 กิโลเมตร ระยะมินิมาราธอน 10 กิโลเมตร และระยะฟันรัน 4.5 กิโลเมตร</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#event2Modal">อ่านเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://s359.kapook.com/pagebuilder/b015be6d-69d5-4dc0-8941-0d055dc35f98.jpg" class="card-img-top" alt="กิจกรรม 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">งานเทศกาลแสงสีเสียงพนมรุ้ง</h5>
+                        <p class="card-text">สัมผัสบรรยากาศวัฒนธรรมพื้นบ้านและการแสดงแสงสีเสียงสุดประทับใจ...</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#event3Modal">อ่านเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับงานแข่งขัน MOTO GP -->
+    <div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="event1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="event1Label">รายละเอียด: งานแข่งขัน MOTO GP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>นับถอยหลังสำหรับการแข่งขันรถจักรยานยนต์ทางเรียบชิงแชมป์โลก MotoGP 2024 ที่ประเทศไทยเป็นเจ้าภาพเป็นปีที่ 5 ภายใต้ชื่อ “PT Grand Prix of Thailand 2024” โดย ไทยแลนด์ โมโตจีพี 2024 จัดระหว่างวันที่ 25-27 ตุลาคม 2567 ที่ สนามช้าง</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับงานบุรีรัมย์มาราธอน -->
+    <div class="modal fade" id="event2Modal" tabindex="-1" aria-labelledby="event2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="event2Label">รายละเอียด: บุรีรัมย์มาราธอน</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>การแข่งขันวิ่ง บุรีรัมย์ มาราธอน 2024 เป็นรายการการแข่งขันวิ่งทั้งสิ้น 4 ระยะ ได้แก่ ระยะมาราธอน 42.195 กิโลเมตร ระยะฮาล์ฟมาราธอน 21.1 กิโลเมตร ระยะมินิมาราธอน 10 กิโลเมตร และระยะฟันรัน 4.5 กิโลเมตร ซึ่งได้รับการรับรองมาตรฐานการแข่งขันระดับโลกจาก World Athletics ระดับ Gold Label โดยในปีนี้มีนักวิ่งเข้าร่วมทำการแข่งขันกว่า 32,000 คน จากกว่า 46 ประเทศทั่วโลก และมีนักวิ่งอีลีท World Ranking มาร่วมทำการแข่งขันจำนวน 49 คน และจะก่อให้เกิดรายได้หมุนเวียนในระบบเศรษฐกิจไม่น้อยกว่า 680 ล้านบาท ซึ่งนับว่าเป็น World Sport Event ที่ตอกย้ำภาพลักษณ์ให้ประเทศไทยเป็น Sport Destination ของนักท่องเที่ยวชาวต่างชาติ</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับงานเทศกาลแสงสีเสียงพนมรุ้ง -->
+    <div class="modal fade" id="event3Modal" tabindex="-1" aria-labelledby="event3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="event3Label">รายละเอียด: งานเทศกาลแสงสีเสียงพนมรุ้ง</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>ประเพณีขึ้นเขาพนมรุ้ง 2567 อลังการจัดเต็มทั้งแสง สี เสียง และการแสดง ณ อุทยานประวัติศาสตร์พนมรุ้ง อำเภอเฉลิมพระเกียรติ จังหวัดบุรีรัมย์ ประเพณีขึ้นเขาพนมรุ้ง 2567 มีไฮไลต์อะไร
+                        งานประเพณีขึ้นเขาพนมรุ้ง เป็นงานเทศกาลท่องเที่ยวของจังหวัดบุรีรัมย์ ที่จัดขึ้นเป็นประจำทุกปี กิจกรรมส่วนใหญ่ประกอบด้วย
+                        
+                        พิธีบวงสรวงมหาเทพ สิ่งศักดิ์สิทธิ์ที่สถิต ณ เขาพนมรุ้ง
+                        ขบวนอัญเชิญพระศิวะมหาเทพ
+                        ขบวนสัตว์พาหนะเทพผู้พิทักษ์ประจำทิศทั้ง 10 ทิศ
+                        ขบวนเสด็จพระนางภูปตินทรลักษมีเทวี
+                        ขบวนแห่สักการะ “น้อมจิตบังคม พนมรุ้งนาฏการ” จากนางรำทั้ง 23 อำเภอ (จัดเต็มรำ 3 วัน) ที่บรรจงแต่งกายด้วยชุดที่สวยงามร่วมขบวนการแสดง พร้อมทั้งมีการแสดงแสง สี เสียง
+                        กิจกรรมโฮปบายดินเนอร์
+                        ตลาดอารยธรรมวนัมรุง ผลิตภัณฑ์โอทอป ตลาดสินค้าโบราณของพื้นบ้าน อาหารพื้นถิ่นของชาวจังหวัดบุรีรัมย์</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 กิจกรรมจังหวัดบุรีรัมย์</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

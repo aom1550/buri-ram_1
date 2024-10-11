@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวจังหวัดบุรีรัมย์</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* ปรับแต่งสีสันของ navbar */
+        .navbar {
+            background-color: rgb(25, 157, 245); /* เปลี่ยนสีพื้นหลัง */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFFFFF; /* เปลี่ยนสีข้อความ */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FFD700; /* เปลี่ยนสีข้อความเมื่อชี้ไปที่ลิงก์ */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">ท่องเที่ยวจังหวัดบุรีรัมย์</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tourist-attractions.html">สถานที่ท่องเที่ยว</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">กิจกรรม</a> <!-- ลิงก์ไปยังหน้ากิจกรรม -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">อาหาร</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center" style="margin-top: 40px; color: #ffffff; background-color: rgb(25, 157, 245); font-size: 2rem; text-shadow: 2px 2px 4px rgba(132, 22, 22, 0.2);">บุรีรัมย์มีอะไร</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.govivigo.com/content/news/5e5e41f69a771c1003000022-2.jpg" class="card-img-top" alt="ปราสาทพนมรุ้ง" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ปราสาทพนมรุ้ง</h5>
+                        <p class="card-text">อุทยานประวัติศาสตร์พนมรุ้ง หรือ ปราสาทหินพนมรุ้ง เป็นอุทยานประวัติศาสตร์แห่งหนึ่งของประเทศไทย</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.superbikemag.com/wp-content/uploads/2020/01/S__28778531.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 2" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">กิจกรรม งานแข่งขัน MOTO GP</h5>
+                        <p class="card-text">นับถอยหลังสำหรับการแข่งขันรถจักรยานยนต์ทางเรียบชิงแชมป์โลก MotoGP 2024.</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://cms.dmpcdn.com/ugcarticle/2019/11/01/4af73a20-27cc-11eb-8dee-9f85d7573fa8_original.jpeg" class="card-img-top" alt="สถานที่ท่องเที่ยว 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ข้าวมันไก่ชุมนุมไทย</h5>
+                        <p class="card-text">“มาบุรีรัมย์นอกจากจะต้องแวะกินลูกชิ้นยืนกินแล้ว ยังต้องแวะมาที่ร้านอาหารบุรีรัมย์แห่งนี้ด้วย ต้องบอกว่าเป็นร้านที่ขาย “ข้าวมันไก่”</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับสถานที่ท่องเที่ยว 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">รายละเอียดเพิ่มเติม: ปราสาทพนมรุ้ง</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>อุทยานประวัติศาสตร์พนมรุ้ง หรือ ปราสาทหินพนมรุ้ง เป็นอุทยานประวัติศาสตร์แห่งหนึ่งของประเทศไทยภายใต้การดูแลของกรมศิลปากร กระทรวงวัฒนธรรม เป็นหนึ่งในปราสาทหินในกลุ่มราชมรรคา ตั้งอยู่ที่หมู่ที่ 2 (บ้านดอนหนองแหน) ตำบลตาเป๊ก อำเภอเฉลิมพระเกียรติ ห่างจากตัวเมืองบุรีรัมย์ลงมาทางทิศใต้ประมาณ 77 กิโลเมตร ประกอบไปด้วยโบราณสถานสำคัญ ซึ่งตั้งอยู่บนยอดภูเขาไฟที่ดับสนิทแล้ว สูงประมาณ 200 เมตรจากพื้นราบ (ประมาณ 350 เมตรจากระดับน้ำทะเลปานกลาง) คำว่า พนมรุ้ง นั้น มาจากภาษาเขมร คำว่า วนํรุง แปลว่า ภูเขาใหญ่</p>
+                    <p>ปัจจุบัน ปราสาทหินพนมรุ้งกำลังอยู่ในเกณฑ์กำลังพิจารณาเป็นมรดกโลก เช่นเดียวกับ ปราสาทหินในกลุ่มราชมรรคา ปราสาทหินพนมรุ้งเป็นหนึ่งในปราสาทหินขอมของไทยที่มีชื่อเสียงมากที่สุด เป็นสถานที่ท่องเที่ยวที่สำคัญที่สุดแห่งหนึ่งของจังหวัดบุรีรัมย์ และถือเป็นสัญลักษณ์ที่สำคัญของจังหวัดบุรีรัมย์ รวมถึงเป็นภาพพื้นหลังตราสัญลักษณ์ของสโมสรฟุตบอลบุรีรัมย์ ยูไนเต็ดอีกด้วย</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับสถานที่ท่องเที่ยว 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel2">รายละเอียดเพิ่มเติม: งานแข่งขัน MOTO GP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>นับถอยหลังสำหรับการแข่งขันรถจักรยานยนต์ทางเรียบชิงแชมป์โลก MotoGP 2024 ที่ประเทศไทยเป็นเจ้าภาพเป็นปีที่ 5 ภายใต้ชื่อ “PT Grand Prix of Thailand 2024” โดย ไทยแลนด์ โมโตจีพี 2024 จัดระหว่างวันที่ 25-27 ตุลาคม 2567 ที่ สนามช้าง</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับสถานที่ท่องเที่ยว 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">รายละเอียดเพิ่มเติม: ข้าวมันไก่ชุมนุมไทย</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>“มาบุรีรัมย์นอกจากจะต้องแวะกินลูกชิ้นยืนกินแล้ว ยังต้องแวะมาที่ร้านอาหารบุรีรัมย์แห่งนี้ด้วย ต้องบอกว่าเป็นร้านที่ขาย “ข้าวมันไก่” แบบดั้งเดิมที่ตามหาเลย เนื้อไก่เป็นเนื้อที่ได้เคี้ยว ไม่ผุยเป็นแป้ง ข้าวหอมกำลังดี มีความมัน ต้องบอกว่าโอเค น้ำจิ้มอร่อย มี 2 แบบ เป็นแบบซีอิ๊วดำหวานและแบบน้ำจิ้มพริกส้ม ได้เยอะดีครับ น้ำซุปใส่ฟักหอมมาเต็มชาม อร่อย ทางร้านมีทั้ง “ข้าวมันไก่” และ “ข้าวมันไก่ทอด” ให้เลือกได้ตามใจเลย” (โดยคุณ Pipatpong Promchan)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 ท่องเที่ยวจังหวัดบุรีรัมย์</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

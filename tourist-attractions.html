@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวจังหวัดบุรีรัมย์</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* ปรับแต่งสีสันของ navbar */
+        .navbar {
+            background-color: rgb(25, 157, 245); /* เปลี่ยนสีพื้นหลัง */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFFFFF; /* เปลี่ยนสีข้อความ */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FFD700; /* เปลี่ยนสีข้อความเมื่อชี้ไปที่ลิงก์ */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">ท่องเที่ยวจังหวัดบุรีรัมย์</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tourist-attractions.html">สถานที่ท่องเที่ยว</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">กิจกรรม</a> <!-- ลิงก์ไปยังหน้ากิจกรรม -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">อาหาร</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center" style="margin-top: 40px; color: #ffffff; background-color: rgb(25, 157, 245); font-size: 2rem; text-shadow: 2px 2px 4px rgba(132, 22, 22, 0.2);">ท่องเที่ยวบุรีรัมย์</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.govivigo.com/content/news/5e5e41f69a771c1003000022-2.jpg" class="card-img-top" alt="ปราสาทพนมรุ้ง" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ปราสาทพนมรุ้ง</h5>
+                        <p class="card-text">อุทยานประวัติศาสตร์พนมรุ้ง หรือ ปราสาทหินพนมรุ้ง เป็นอุทยานประวัติศาสตร์แห่งหนึ่งของประเทศไทย</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://files.thailandtourismdirectory.go.th/assets/upload/2018/03/27/20180327a9f7e97965d6cf799a529102a973b8b9153717.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 2" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">สนามช้างอารีน่า</h5>
+                        <p class="card-text">ช้างอารีนา (อังกฤษ: Chang Arena, ชื่อเดิม: ไอ-โมบาย สเตเดียม) มีชื่ออย่างไม่เป็นทางการว่า ไอ-โมบายล์ธันเดอร์คาสเซิลสเตเดียม</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://fg.lnwfile.com/_/fg/_raw/py/yy/tr.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">สนามช้าง อินเตอร์เนชั่นแนล เซอร์กิต</h5>
+                        <p class="card-text">บุรีรัมย์ อินเตอร์เนชันแนล เซอร์กิต (อังกฤษ: Buriram International Circuit , ย่อ: BRIC) หรือ ช้าง อินเตอร์เนชั่นแนล เซอร์กิต</p>
+                        <!-- ปุ่มเปิด Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+                            อ่านเพิ่มเติม
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับสถานที่ท่องเที่ยว 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">รายละเอียดเพิ่มเติม: ปราสาทพนมรุ้ง</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>อุทยานประวัติศาสตร์พนมรุ้ง หรือ ปราสาทหินพนมรุ้ง เป็นอุทยานประวัติศาสตร์แห่งหนึ่งของประเทศไทยภายใต้การดูแลของกรมศิลปากร กระทรวงวัฒนธรรม เป็นหนึ่งในปราสาทหินในกลุ่มราชมรรคา ตั้งอยู่ที่หมู่ที่ 2 (บ้านดอนหนองแหน) ตำบลตาเป๊ก อำเภอเฉลิมพระเกียรติ ห่างจากตัวเมืองบุรีรัมย์ลงมาทางทิศใต้ประมาณ 77 กิโลเมตร ประกอบไปด้วยโบราณสถานสำคัญ ซึ่งตั้งอยู่บนยอดภูเขาไฟที่ดับสนิทแล้ว สูงประมาณ 200 เมตรจากพื้นราบ (ประมาณ 350 เมตรจากระดับน้ำทะเลปานกลาง) คำว่า พนมรุ้ง นั้น มาจากภาษาเขมร คำว่า วนํรุง แปลว่า ภูเขาใหญ่</p>
+
+                        <p>ปัจจุบัน ปราสาทหินพนมรุ้งกำลังอยู่ในเกณฑ์กำลังพิจารณาเป็นมรดกโลก เช่นเดียวกับ ปราสาทหินในกลุ่มราชมรรคา ปราสาทหินพนมรุ้งเป็นหนึ่งในปราสาทหินขอมของไทยที่มีชื่อเสียงมากที่สุด เป็นสถานที่ท่องเที่ยวที่สำคัญที่สุดแห่งหนึ่งของจังหวัดบุรีรัมย์ และถือเป็นสัญลักษณ์ที่สำคัญของจังหวัดบุรีรัมย์ รวมถึงเป็นภาพพื้นหลังตราสัญลักษณ์ของสโมสรฟุตบอลบุรีรัมย์ ยูไนเต็ดอีกด้วย</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับสถานที่ท่องเที่ยว 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel2">รายละเอียดเพิ่มเติม: สนามช้างอารีน่า</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>ช้างอารีนา (อังกฤษ: Chang Arena, ชื่อเดิม: ไอ-โมบาย สเตเดียม) มีชื่ออย่างไม่เป็นทางการว่า ไอ-โมบายล์ธันเดอร์คาสเซิลสเตเดียม (อังกฤษ: Thunder Castle Stadium) เป็นสนามกีฬาที่สร้างขึ้นเพื่อใช้เป็นสนามเหย้าของสโมสรฟุตบอลบุรีรัมย์ ยูไนเต็ด ตั้งอยู่ที่ตำบลในเมือง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ สนามแห่งนี้มีความจุ 24,000 ที่นั่ง (ในปี พ.ศ. 2557 ได้ต่อเติมเป็น 32,600 ที่นั่ง) โครงสร้างประกอบด้วยเหล็กและไฟเบอร์ ซึ่งสร้างด้วยงบประมาณกว่า 500 ล้านบาท โดยเป็นเงินสนับสนุนภายใต้สัญญาการกำหนดชื่อจากไอ-โมบายและบางส่วนของนายเนวิน ชิดชอบ จัดเป็นสนามฟุตบอลที่ได้มาตรฐานแห่งแรกและแห่งเดียวในประเทศไทยที่ไม่มีลู่วิ่งคั่นสนามและผ่านมาตรฐานระดับโลกจากสหพันธ์ฟุตบอลระหว่างประเทศ,มาตรฐานสนามกีฬาระดับเอจากสมาพันธ์ฟุตบอลเอเชีย และสหพันธ์ฟุตบอลอาเซียน และยังได้บันทึกลงกินเนสบุ๊คว่าเป็นสนามฟุตบอลในระดับฟีฟ่าที่ใช้เวลาก่อสร้างน้อยที่สุดในโลกคือ 256 วัน[2]</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับสถานที่ท่องเที่ยว 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">รายละเอียดเพิ่มเติม: สนามช้าง อินเตอร์เนชั่นแนล เซอร์กิต</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>บุรีรัมย์ อินเตอร์เนชันแนล เซอร์กิต (อังกฤษ: Buriram International Circuit , ย่อ: BRIC) หรือ ช้าง อินเตอร์เนชั่นแนล เซอร์กิต (ชื่อตามบริษัทเบียร์ช้าง ซึ่งเป็นผู้สนับสนุนหลักของสนามในปัจจุบัน) เป็นสนามแข่งรถมาตรฐานสมาพันธ์รถยนต์นานาชาติ (FIA) ในประเทศไทย ตั้งอยู่ด้านทิศตะวันตกของช้างอารีนา ตำบลอิสาณ อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์
+
+                        ในวันที่ 24 กันยายน 2557 สนามช้างได้รับการรับรองจากสมาพันธ์รถยนต์นานาชาติ ว่าเป็นสนามแข่งรถระดับมาตรฐาน เอฟไอเอ เกรด 1 (FIA Grade 1) ซึ่งเป็นระดับสนามที่อนุญาตให้ใช้จัดการแข่งขันรถสูตรหนึ่ง (ฟอร์มูลาวัน) ได้[1]
+                        
+                        ในวันที่ 7 ตุลาคม 2557 สนามช้างได้รับการรับรองจากสมาพันธ์จักรยานยนต์นานาชาติ (FIM) ว่าเป็นสนามแข่งรถระดับมาตรฐาน เอฟไอเอ็ม เกรด เอ (FIM Grade A) ซึ่งเป็นระดับสนามที่อนุญาตให้ใช้จัดการแข่งขันโมโตจีพีได้[2]
+                        
+                        เมื่อวันที่ 29 สิงหาคม 2557 กิจกรรม "พัฒนาเมืองบุรีรัมย์ สู่เมืองกีฬามาตรฐานโลก" นายเนวิน ชิดชอบ ประธานที่ปรึกษาโครงการสนามแข่งรถช้าง อินเตอร์เนชั่นแนล เซอร์กิต ร่วมกับหอการค้าจังหวัดบุรีรัมย์จัดขึ้น เพื่อเป็นการปลุกให้ชาวบุรีรัมย์ตื่นตัวกับการลงทุนทำธุรกิจ และร่วมกันพัฒนาเมืองบุรีรัมย์สู่การเป็นเมืองท่องเที่ยวหลัก พร้อมทั้งประกาศยกระดับเมืองบุรีรัมย์สู่การเป็นมหานครแห่งกีฬาระดับโลก ทั้งนี้ นายเนวินได้เปิดให้ชาวบุรีรัมย์เข้าชมสนามแข่งรถระดับโลกมูลค่ากว่า 2 พันล้านบาท แห่งแรกและแห่งเดียวในไทย ซึ่งมีกำหนดการเปิดสนามแข่งขันอย่างเป็นทางการ ในวันที่ 4 ตุลาคม พ.ศ. 2557[3]
+                        
+                        การแข่งขัน โมโตจีพี ฤดูกาล 2018 จะจัดขึ้นที่สนามช้าง อินเตอร์เนชั่นแนล เซอร์กิต ระหว่างวันที่ 5-7 ตุลาคม พ.ศ. 2561 ซึ่งเป็นสนามที่ 15 จากทั้งหมด 19 สนาม นับเป็นการจัดแข่งขันโมโตจีพีครั้งแรกในประเทศไทย โดยมีการเซ็นสัญญาจัดการแข่งขันเป็นเวลา 3 ปี (พ.ศ. 2561 - พ.ศ. 2563) [4]
+                        
+                        ส่วนรถสูตรหนึ่ง (ฟอร์มูลาวัน) นั้นยังไม่มีแผนที่จะจัด แต่ก็ได้เสนอแนะว่าหากรัฐบาลหรือเอกชนรายอื่นจะจัดการแข่งขันฟอร์มูลาวันขึ้นในประเทศไทยก็สามารถใช้สนามช้างได้</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 ท่องเที่ยวจังหวัดบุรีรัมย์</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
